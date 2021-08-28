@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        canvas {
+            border: 0.5em solid #333;
+            border-bottom: 0;
+        }
+
+        a {
+            color: lightblue;
+        }
+
+        a:hover {
+            color: white;
+        }
+    </style>
+    <title>Snake</title>
+</head>
+
+<body style="background-color: #555;">
+    <div>
+        <canvas id="canvas" width="1024" height="768" style="border:0.5em solid #333; border-bottom:0;"></canvas>
+    </div>
+    <div>
+        <a href="https://github.com/dmcdo/snake/issues">Submit an issue</a>
+        <br />
+        <a href="https://github.com/dmcdo/snake">View the source code</a>
+    </div>
+
+    <script src="snake.js"></script>
+    <script>
+        const canvas = document.getElementById('canvas');
+        const game = new SnakeGame(canvas);
+    </script>
+</body>
+
+</html>
